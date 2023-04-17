@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Ravindra Jadhav Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a4edb86737.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Image/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#specializations">Specialization</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Android Developer</p>
+            <h1>Hello&nbsp;Folks,<br>I'm&nbsp;<span>Ravindra</span>&nbsp;Jadhav</h1>
+        </div>
+    </div>
+</div>
+
+<!---------About Section----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Image/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit </p>
+                            
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Android</span><br>Application Development</li>
+                                <li><span>iOS</span><br>Application Development</li>
+                                <li><span>Web</span><br>Website Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023-Current</span><br>Android Developer Intern<br>Martyear Technology</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-2023</span><br>Diploma in Computer Engineering<br>Government Polytechnic Mumbai</li>
+                                <li><span>2019-2020</span><br>S.S.C.<br>Anusaya Vidhyalaya Virar</li>
+                            </ul>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>
+
+<!---------------Specialization-------------->
+<div id="specializations">
+    <div class="container">
+        <h1 class="sub-title">My Specialization</h1>
+        <div class="specializations-list">
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Android Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo aute.</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>iOS Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo aute.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo aute.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Desgin</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo aute.</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------Projects----------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="projects-list">
+            <div class="project">
+                <img src="Image/project1.png">
+                <div class="layer">
+                    <h3>Majha Shetkari- Online Kissan App</h3>
+                    <p>This is online E-commerce and Selling app where our Farmers can purchase their
+                         required matertial of agricutural Industry,
+                        Also Farmers can sell their old equipment as well as buy used equipments.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Image/project2.png">
+                <div class="layer">
+                    <h3>RYK Foods -Restaurant Management App</h3>
+                    <p>This is online E-commerce and Selling app where our Farmers can purchase their
+                         required matertial of agricutural Industry,
+                        Also Farmers can sell their old equipment as well as buy used equipments.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Image/project3.png">
+                <div class="layer">
+                    <h3>B2B Marketplace App</h3>
+                    <p>This is online E-commerce and Selling app where our Farmers can purchase their
+                         required matertial of agricutural Industry,
+                        Also Farmers can sell their old equipment as well as buy used equipments.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!------------Contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>&nbsp;jadhaor181@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>&nbsp;+91 7620384235</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/7620384235"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/raviii_0817_/?igshid=ZDdkNTZiNTM%3D"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ravindra-jadhav-bb302822b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/JadhaoR181"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1dbdXzgt6ugdPtZQSYvzkHbsrjTQ_osiU/view?usp=sharing" class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="E-mail Address" placeholder="Your E-mail Address" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ravindra Dattaram Jadhav.&nbsp;<i class="fa-solid fa-robot"></i></p>
+    </div>
+</div>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwmzWHzya38Cphitb2beqQ7lXII12V5WjuxC0f0oImJNdCs-9Pzh2wNJmV39hF43REu/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!!!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
