@@ -31,11 +31,13 @@ nav{
     flex-wrap: wrap;
 }
 
+icon{
+    color: #ff004f;
+}
 
 .logo{
     width: 150px;
     margin-left: -20px;
-   
 }
 
 nav ul li{
