@@ -6,15 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <title>Ravindra Jadhav Portfolio</title>
-    <link rel="icon" href="Image/robot-solid.svg">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/a4edb86737.js" crossorigin="anonymous"></script>
-    <script>
-        window.onload = function() {
-          window.location.href = '#header';
-        };
-      </script>
 </head>
 <body>
 <div id="header">
@@ -32,9 +26,8 @@
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Android Developer</p>
-            <h1>Hello&nbsp;Folks,<br>I'm&nbsp;<span>Ravindra</span>&nbsp;Jadhav</h1>
-      
+            <p id="profession-text">Android Developer</p>
+            <h1>Hello&nbsp;Folks,<br>I'm&nbsp;<span>Ravindra</span> Dattaram&nbsp;Jadhav</h1>
         </div>
     </div>
 </div>
@@ -186,7 +179,7 @@
                     <a href="https://www.linkedin.com/in/ravindra-jadhav-bb302822b/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/JadhaoR181"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="https://drive.google.com/file/d/1pCbgEdJt1V_Mp0DNMCvvAof-X5w0FA3d/view?usp=share_link" class="btn btn2">Download CV</a>
+                <a href="https://drive.google.com/file/d/1dbdXzgt6ugdPtZQSYvzkHbsrjTQ_osiU/view?usp=sharing" class="btn btn2">Download CV</a>
 
             </div>
             <div class="contact-right">
@@ -233,6 +226,49 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script>
+// Update the profession every 2 seconds
+setInterval(updateProfession, 2000);
+
+// Array of professions
+var professions = [
+    { name: "Android Developer" },
+    { name: "Web Developer" },
+    { name: "Designer" }
+];
+
+// Get the profession element
+var professionText = document.getElementById("profession-text");
+
+// Index to keep track of the current profession
+var currentIndex = 0;
+
+// Function to update the profession with animation
+function updateProfession() {
+    var profession = professions[currentIndex];
+    var sections = profession.name.split(" ");
+    var professionHTML = '';
+
+    for (var i = 0; i < sections.length; i++) {
+        if (i === 0) {
+            professionHTML += `<span class="red-text">${sections[i]}</span>`;
+        } else {
+            professionHTML += ` ${sections[i]}`;
+        }
+    }
+
+    professionText.innerHTML = professionHTML;
+
+    professionText.classList.add("typing-animation");
+
+    setTimeout(function() {
+        professionText.classList.remove("typing-animation");
+    }, 500);
+
+    currentIndex = (currentIndex + 1) % professions.length;
+}
+
   </script>
 </body>
 </html>
