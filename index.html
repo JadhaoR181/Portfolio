@@ -245,29 +245,34 @@ var currentIndex = 0;
 
 // Function to update the profession with animation
 function updateProfession() {
+    // Get the current profession
     var profession = professions[currentIndex];
-    var sections = profession.name.split(" ");
-    var professionHTML = '';
 
-    for (var i = 0; i < sections.length; i++) {
-        if (i === 0) {
-            professionHTML += `<span class="red-text">${sections[i]}</span>`;
-        } else {
-            professionHTML += ` ${sections[i]}`;
-        }
+    // Split the profession name into words
+    var words = profession.name.split(" ");
+
+    // Create a string of HTML with the first word in red
+    var html = `<span class="red-text">${words[0]}</span>`;
+
+    // For each remaining word, add it to the string of HTML
+    for (var i = 1; i < words.length; i++) {
+        html += ` ${words[i]}`;
     }
 
-    professionText.innerHTML = professionHTML;
+    // Set theinnerHTML of the profession text element to the HTML string
+    professionText.innerHTML = html;
 
+    // Add the "typing-animation" class to the profession text element
     professionText.classList.add("typing-animation");
 
+    // After 500 milliseconds, remove the "typing-animation" class from the profession text element
     setTimeout(function() {
         professionText.classList.remove("typing-animation");
     }, 500);
 
+    // Increment the index of the current profession
     currentIndex = (currentIndex + 1) % professions.length;
 }
-
   </script>
 </body>
 </html>
