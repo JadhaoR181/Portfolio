@@ -20,6 +20,33 @@ body {
     background-position: center;
 }
 
+#profession-text {
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+}
+
+#profession-text.typing-animation {
+    animation: typing 1s steps(30) forwards;
+}
+
+#profession-text .red-text {
+    color: red;
+}
+
+#profession-text .red-text {
+    color: red;
+}
+
+#profession-text .white-text {
+    color: white;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
 .container{
     padding: 10px 30px;
 }
@@ -31,13 +58,11 @@ nav{
     flex-wrap: wrap;
 }
 
-icon{
-    color: #ff004f;
-}
 
 .logo{
     width: 150px;
     margin-left: -20px;
+   
 }
 
 nav ul li{
