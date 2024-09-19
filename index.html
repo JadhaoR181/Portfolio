@@ -1,276 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Ravindra Jadhav Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/a4edb86737.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="Image/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#specializations">Specialization</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p id="profession-text">Android Developer</p>
-            <h1>Hello&nbsp;Folks,<br>I'm&nbsp;<span>Ravindra</span> Dattaram&nbsp;Jadhav</h1>
-        </div>
-    </div>
-</div>
-
-<!---------About Section----------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="Image/AboutMeImg.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p> I'm a skilled Android developer with a skill for creating user-friendly and visually appealing apps. 
-                    I've built apps from scratch and improved existing ones. 
-                    I'm a quick learner, always willing to go the extra mile to ensure projects are delivered on time and meet client needs. 
-                    I'm eager to learn and confident I can contribute significantly to your team. </p>
-                            
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    
-                    <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Android</span><br>Application Development</li>
-                               <li><span>Web</span><br>Website Development</li>
-                                <li><span>Software</span><br>Software Testing</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>January 2023 - July 2023 </span><br>Android Developer Intern<br>Martyear Technology, Mumbai. </li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2023-Present</span><br>Bachelor's of Engineering in Information Technology<br>MCT's Rajiv Gandhi Institute of Technology, Mumbai</li>
-                                <li><span>2020-2023</span><br>Diploma in Computer Engineering<br>Government Polytechnic Mumbai</li>
-                                <li><span>2019-2020</span><br>S.S.C.<br>Anusaya Vidhyalaya Virar</li>
-                            </ul>
-                        </div>
-                  </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">John Doe</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-</div>
-
-<!---------------Specialization-------------->
-<div id="specializations">
-    <div class="container">
-        <h1 class="sub-title">My Specialization</h1>
-        <div class="specializations-list">
-            <div>
-                <i class="fa-brands fa-android"></i>
-                <h2>Android Development</h2>
-                <p>Enthusiastically specializing in Android development, I bring a passion for creating seamless and intuitive mobile experiences.
-                    Proficient in [mention relevant skills or technologies], I've successfully delivered innovative projects that reflect my commitment to excellence.
-                    Whether optimizing performance or embracing emerging trends, I thrive in the dynamic world of Android.
-                    Let's collaborate to elevate your app ideas and create something exceptional in the Android ecosystem.</p>
-                    <a href="#">learn more</a>
-            </div>
-             <!--- <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>iOS Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo aute.</p>
-                    <a href="#">Learn more</a>
-            </div> -->
-            <div>
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-                <h2>Web Development</h2>
-                <p>Passionate about crafting engaging web experiences, I specialize in web development with expertise in [mention relevant technologies or languages, e.g., HTML, CSS, JavaScript, React].
-                    With a track record of creating dynamic and user-friendly websites, I bring a keen eye for detail and a commitment to delivering high-quality solutions.
-                    My skills extend to [mention any additional skills or frameworks], allowing me to adapt to the ever-evolving landscape of web development.
-                    Let's collaborate to bring your online presence to life and ensure your digital footprint leaves a lasting impression.</p>
-                    <a href="#">Learn more</a>
-            </div>
-           <!-- <div>
-                <i class="fa-sharp fa-solid fa-crop-simple"></i>
-                <h2>UI/UX Desgin</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo aute.</p>
-                    <a href="#">Learn more</a>
-            </div> -->
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </div>
-</div>
-
-<!------------Projects----------->
-<div id="projects">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="projects-list">
-            <div class="project">
-                <img src="Image/project1.png">
-                <div class="layer">
-                    <h3>Majha Shetkari- Online Kissan App</h3>
-                    <p>This is online E-commerce and Selling app where our Farmers can purchase their
-                         required matertial of agricutural Industry,
-                        Also Farmers can sell their old equipment as well as buy used equipments.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="Image/project2.png">
-                <div class="layer">
-                    <h3>RYK Foods -Restaurant Management App</h3>
-                    <p>This is online E-commerce and Selling app where our Farmers can purchase their
-                         required matertial of agricutural Industry,
-                        Also Farmers can sell their old equipment as well as buy used equipments.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="Image/project3.png">
-                <div class="layer">
-                    <h3>B2B Marketplace App</h3>
-                    <p>This is online E-commerce and Selling app where our Farmers can purchase their
-                         required matertial of agricutural Industry,
-                        Also Farmers can sell their old equipment as well as buy used equipments.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
-
-<!------------Contact----------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-regular fa-envelope"></i>&nbsp;jadhaor181@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>&nbsp;+91 7620384235</p>
-                <div class="social-icons">
-                    <a href="https://wa.me/7620384235"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/raviii_0817_/?igshid=ZDdkNTZiNTM%3D"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/ravindra-jadhav-bb302822b/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/JadhaoR181"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="https://drive.google.com/file/d/1jnMcvFqlhx7z0oT0QQl-4CnSsUGHNCXO/view?usp=drive_link" class="btn btn2">Download CV</a>
-
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="E-mail Address" placeholder="Your E-mail Address" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">John Doe</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Ravindra Dattaram Jadhav.&nbsp;<i class="fa-solid fa-robot"></i></p>
-    </div>
-</div>
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwmzWHzya38Cphitb2beqQ7lXII12V5WjuxC0f0oImJNdCs-9Pzh2wNJmV39hF43REu/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully!!!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-  <script>
-// Update the profession every 2 seconds
-setInterval(updateProfession, 1000);
-
-// Array of professions
-var professions = [
-    { name: "Android Developer" },
-    { name: "Web Developer" }
-];
-
-// Get the profession element
-var professionText = document.getElementById("profession-text");
-
-// Index to keep track of the current profession
-var currentIndex = 0;
-
-// Function to update the profession with animation
-function updateProfession() {
-    // Get the current profession
-    var profession = professions[currentIndex];
-
-    // Split the profession name into words
-    var words = profession.name.split(" ");
-
-    // Create a string of HTML with the first word in red
-    var html = `<span class="red-text">${words[0]}</span>`;
-
-    // For each remaining word, add it to the string of HTML
-    for (var i = 1; i < words.length; i++) {
-        html += ` ${words[i]}`;
-    }
-
-    // Set theinnerHTML of the profession text element to the HTML string
-    professionText.innerHTML = html;
-
-    // Add the "typing-animation" class to the profession text element
-    professionText.classList.add("typing-animation");
-
-    // After 500 milliseconds, remove the "typing-animation" class from the profession text element
-    setTimeout(function() {
-        professionText.classList.remove("typing-animation");
-    }, 500);
-
-    // Increment the index of the current profession
-    currentIndex = (currentIndex + 1) % professions.length;
-}
-  </script>
-</body>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
