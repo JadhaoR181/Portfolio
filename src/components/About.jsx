@@ -103,7 +103,7 @@ export default function About() {
 
           {/* Resume Download */}
            <a
-    href="/src/assets/Ravindra Jadhav CV.pdf"
+    href="/Ravindra Jadhav CV.pdf"
     download
     style={{
       display: "inline-block",

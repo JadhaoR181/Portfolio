@@ -7,7 +7,7 @@ const projects = [
     description:
       "A full-fledged clothing platform with T-shirt customization using canvas and 3D previews. Includes admin panel for product management.",
     technologies: ["React", "Vite", "Node.js", "MongoDB", "Stripe", "Cloudinary"],
-    image: "/src/assets/project-banner/wyd.jpg",
+    image: "/project-banner/wyd.jpg",
     link: "https://github.com/JadhaoR181/WYD-WearYourDesignMain",
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     description:
       "An Android app for farmers to buy/sell equipment and crops. Features commodity prices and news in multiple languages.",
     technologies: ["Android", "Java", "Firebase", "MySQL"],
-    image: "/src/assets/project-banner/majha-shetkari.jpg",
+    image: "/project-banner/majha-shetkari.jpg",
     link: "https://github.com/JadhaoR181/Majha_Shetkari",
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     description:
       "React Native app to manage daily tasks with features like add/delete/edit tasks.",
     technologies: ["React Native", "JavaScript"],
-    image: "/src/assets/project-banner/task-management-app.jpg",
+    image: "/project-banner/task-management-app.jpg",
     link: "https://github.com/JadhaoR181/Task-Management-App",
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     description:
       "B2B app for retailers. Includes secure APIs, product listing, payments, and messaging.",
     technologies: ["Java", "PHP", "MySQL", "Firebase"],
-    image: "/src/assets/project-banner/mart2mart.jpg",
+    image: "/project-banner/mart2mart.jpg",
     link: "#",
   },
 ];
