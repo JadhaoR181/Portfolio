@@ -39,7 +39,7 @@ export default function About() {
       >
         {/* Profile Image */}
         <img
-          src="/src/assets/img/me.jpg"
+         src="/img/me.jpg"
           alt="Ravindra"
           style={{
             width: "300px",
