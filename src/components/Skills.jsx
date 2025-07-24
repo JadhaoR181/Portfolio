@@ -4,6 +4,7 @@ import {
   FaNodeJs,
   FaAndroid,
   FaDatabase,
+  FaPython,
   FaPhp,
 } from "react-icons/fa";
 import {
@@ -12,10 +13,12 @@ import {
   SiFlutter,
   SiVite,
   SiFirebase,
+  SiReact,
 } from "react-icons/si";
 
 const skills = [
   { name: "React", icon: <FaReact />, color: "#61DBFB" },
+  { name: "React Native", icon: <SiReact />, color: "#61DBFB" },
   { name: "Next.js", icon: <SiNextdotjs />, color: "#000000" },
   { name: "Vite", icon: <SiVite />, color: "#646CFF" },
   { name: "Node.js", icon: <FaNodeJs />, color: "#3C873A" },
@@ -25,6 +28,7 @@ const skills = [
   { name: "Firebase", icon: <SiFirebase />, color: "#FFCA28" },
   { name: "PHP", icon: <FaPhp />, color: "#777BB4" },
   { name: "MySQL", icon: <FaDatabase />, color: "#00758F" },
+  { name: "Python", icon: <FaPython />, color: "#3776AB" },
 ];
 
 export default function Skills() {
