@@ -59,8 +59,6 @@ Welcome to my personal developer portfolio built with **React + Vite**! This web
 |--------|--------|
 | ![Desktop View](/public/screenshots/desktop-view.png) | ![Mobile View](/public/screenshots/mobile-view.png) |
 
-> _Replace the above placeholder URLs with actual screenshots if needed._
-
 ---
 
 ## 🚀 Deployment
