@@ -28,7 +28,7 @@ const skills = [
   { name: "Firebase", icon: <SiFirebase />, color: "#FFCA28" },
   { name: "PHP", icon: <FaPhp />, color: "#777BB4" },
   { name: "MySQL", icon: <FaDatabase />, color: "#00758F" },
-  { name: "Python", icon: <FaPython />, color: "#3776AB" },
+  { name: "Python", icon: <FaPython />, color: "#FFCA28" },
 ];
 
 export default function Skills() {
