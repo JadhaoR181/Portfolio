@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { Github } from "lucide-react";
 
 const projects = [
@@ -40,34 +40,6 @@ export default function Projects() {
   const carouselRef = useRef(null);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
-
-  // Clone first 2 slides at the end to create infinite loop effect
-  const extendedProjects = [...projects, ...projects.slice(0, 2)];
-
-  useEffect(() => {
-    const container = carouselRef.current;
-    const itemWidth = 350; // adjust based on card width + margin
-    let index = 0;
-
-    const scroll = () => {
-      if (!container) return;
-
-      index++;
-      container.scrollTo({ left: index * itemWidth, behavior: "smooth" });
-
-      // After the last real slide, jump back to start instantly
-      if (index === projects.length) {
-        setTimeout(() => {
-          container.scrollTo({ left: 0, behavior: "auto" });
-          index = 0;
-        }, 350); // wait until scroll finishes
-      }
-    };
-
-    const interval = setInterval(scroll, 4000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
@@ -122,7 +94,7 @@ export default function Projects() {
           scrollSnapType: "x mandatory",
         }}
       >
-        {extendedProjects.map((project, index) => (
+        {projects.map((project, index) => (
           <div
             key={index}
             style={{
