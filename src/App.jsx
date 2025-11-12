@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import GlobalBackground from './GlobalBackground';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
@@ -32,70 +33,75 @@ function App() {
 
   return (
     <>
-    
+      {/* Single Global Background for entire app */}
+      <GlobalBackground />
+      
       <Navbar />
 
-      <Motion.div
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <Home />
-      </Motion.div>
+      {/* Main content wrapper with relative positioning */}
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <Motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <Home />
+        </Motion.div>
 
-      <Motion.div
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <About />
-      </Motion.div>
+        <Motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <About />
+        </Motion.div>
 
-      <Motion.div
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <Skills />
-      </Motion.div>
+        <Motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <Skills />
+        </Motion.div>
 
-      <Motion.div
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <Qualification />
-      </Motion.div>
+        <Motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <Qualification />
+        </Motion.div>
 
-      <Motion.div
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <Projects />
-      </Motion.div>
+        <Motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <Projects />
+        </Motion.div>
 
-      <Motion.div
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <Contact />
-      </Motion.div>
+        <Motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <Contact />
+        </Motion.div>
 
-      <Footer />
+        <Footer />
+      </div>
 
       {/* Scroll Up Button */}
       {showScrollButton && (
@@ -108,17 +114,27 @@ function App() {
             position: 'fixed',
             bottom: '30px',
             right: '30px',
-            padding: '12px',
+            padding: '14px',
             borderRadius: '50%',
             border: 'none',
-            backgroundColor: '#0650acff',
+            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
             color: 'white',
             cursor: 'pointer',
-            boxShadow: '0 4px 10px rgba(0,0,0,0.3)',
-            zIndex: 999,
+            boxShadow: '0 6px 25px rgba(102, 126, 234, 0.4)',
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'transform 0.3s ease',
+          }}
+          onMouseOver={(e) => {
+            e.currentTarget.style.transform = 'scale(1.1) translateY(-5px)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.transform = 'scale(1) translateY(0)';
           }}
         >
-          <ArrowUp size={20} />
+          <ArrowUp size={22} />
         </Motion.button>
       )}
     </>
