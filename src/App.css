@@ -1,42 +1,35 @@
+/* src/App.css */
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+}
+
+/* src/App.css */
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Common section title */
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  margin-bottom: 1rem;
+
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.section-subtitle {
+  max-width: 650px;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  margin: 0 auto 4rem;
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+  text-align: center;
 
-.card {
-  padding: 2em;
-}
+  color: var(--text-secondary);
 
-.read-the-docs {
-  color: #888;
+  line-height: 1.7;
 }

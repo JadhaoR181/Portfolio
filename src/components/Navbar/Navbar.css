@@ -1,0 +1,136 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  transition: all .3s ease;
+}
+
+.navbar-scrolled {
+  background: rgba(255,255,255,.8);
+
+  backdrop-filter: blur(20px);
+
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-container {
+  height: 80px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+
+  font-weight: 700;
+
+  font-family: "Space Grotesk";
+
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.nav-links button {
+  position: relative;
+
+  font-size: .95rem;
+
+  color: var(--text-secondary);
+
+  transition: .3s;
+}
+
+.nav-links button:hover {
+  color: var(--text-primary);
+}
+
+.nav-links button::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -5px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--accent);
+
+  transition: .3s;
+}
+
+.nav-links button:hover::after {
+  width: 100%;
+}
+
+.resume-btn {
+  padding: .8rem 1.2rem;
+
+  border-radius: 10px;
+
+  border: 1px solid var(--border);
+
+  transition: .3s;
+}
+
+.resume-btn:hover {
+  transform: translateY(-2px);
+
+  border-color: var(--accent);
+}
+
+.menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width:768px){
+
+.menu-btn{
+display:flex;
+}
+
+.nav-links{
+display:none;
+}
+
+.mobile-menu{
+display:flex;
+
+flex-direction:column;
+
+padding:20px;
+
+gap:1rem;
+
+background:white;
+
+border-top:1px solid var(--border);
+}
+
+.mobile-menu button,
+.mobile-menu a{
+text-align:left;
+
+padding:.7rem;
+}
+}
